@@ -1,0 +1,10 @@
+# NAME: Claude（主人自维护）
+# 用法：Surge / Egern RULE-SET，策略指向 Claude 组
+# 来源：主人 Loon 手写规则 + Sukka ai.conf 中的 Claude 部分
+# UPDATED: 2026-11-02
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,clau.de
+IP-CIDR,160.79.104.0/23,no-resolve
