@@ -20,3 +20,4 @@ https://raw.githubusercontent.com/bryannwu/rules/main/Claude.list
 |---|---|---|
 | [广告域名拦截](Surge/Yubee-AdBlock-Domain.sgmodule) | Sukka 广告域名表，只按域名拦截，不解密；STUN 不拦截 | `https://raw.githubusercontent.com/bryannwu/rules/main/Surge/Yubee-AdBlock-Domain.sgmodule` |
 | [VPS 流量面板](Surge/Komari-Traffic-Panel.sgmodule) | 读取 Komari 只读汇总接口显示 VPS 月流量；token 在模块参数里填，不在仓库里 | `https://raw.githubusercontent.com/bryannwu/rules/main/Surge/Komari-Traffic-Panel.sgmodule` |
+| [广告拦截&净化合集（fmz200 修正版）](Surge/fmz200-blockAds-fixed.sgmodule) | 改自 [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) 的 blockAds.module（GPL-3.0，见 [fmz200-LICENSE](Surge/fmz200-LICENSE)），仅删除 1 行 Surge 校验不通过的规则；不会自动跟随上游更新 | `https://raw.githubusercontent.com/bryannwu/rules/main/Surge/fmz200-blockAds-fixed.sgmodule` |

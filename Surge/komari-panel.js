@@ -113,7 +113,7 @@ function run(argument, httpGet, now, done) {
   const servers = serversFrom(args.servers);
   const offset = Number.isFinite(Number(args.tz)) ? Number(args.tz) : 0;
   if (!args.url || !/^https:\/\//.test(args.url)) return done(fail('未配置接口地址'));
-  if (!args.token || /[\r\n]/.test(args.token)) return done(fail('未配置只读 token'));
+  if (!args.token || args.token === 'none' || /^\{\{\{/.test(args.token) || /[\r\n]/.test(args.token)) return done(fail('未配置只读 token'));
   if (!servers) return done(fail('服务器参数格式错误'));
   httpGet(
     { url: args.url, headers: { Authorization: 'Bearer ' + args.token, 'Cache-Control': 'no-cache' }, timeout: 5 },

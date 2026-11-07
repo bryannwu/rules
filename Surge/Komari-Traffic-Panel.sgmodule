@@ -2,8 +2,8 @@
 #!desc=显示 hhost、DMIT、野草云、Novix 的本月流量。数据来自 Komari 只读汇总接口，约两小时刷新一次，只发一个请求，不需要解密。
 #!category=面板
 #!homepage=https://github.com/bryannwu/rules
-#!arguments=TOKEN:,SERVERS:US-LA-HHost/hhost/400|US-LA-DMIT/DMIT/1000|HK-Yecao/野草云/600|US-LA-Novix/Novix/1000,TZ:0
-#!arguments-desc=TOKEN：只读 token（在手机上填，不要分享）\nSERVERS：探针名/显示名/GB配额，多台用 | 隔开，最多 4 台\nTZ：计费时区偏移分钟，0 为 UTC，北京时间填 480
+#!arguments=TOKEN:none,SERVERS:US-LA-HHost/hhost/400|US-LA-DMIT/DMIT/1000|HK-Yecao/野草云/600|US-LA-Novix/Novix/1000,TZ:0
+#!arguments-desc=TOKEN：只读 token，把 none 换成你的 token（不要分享）\nSERVERS：探针名/显示名/GB配额，多台用 | 隔开，最多 4 台\nTZ：计费时区偏移分钟，0 为 UTC，北京时间填 480
 
 [Panel]
 KomariTraffic = script-name=KomariTraffic,update-interval=7200
