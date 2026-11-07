@@ -1,0 +1,12 @@
+#!name=广告域名拦截（Sukka）
+#!desc=按域名拦截广告与追踪（穿山甲、优量汇等广告平台）。只看域名、不查 DNS、不解密，几乎不耗电。STUN 不拦截。
+#!category=去广告
+#!homepage=https://github.com/bryannwu/rules
+#!date=2026-11-07
+
+[Rule]
+# STUN 不拦截，按分流走（Sukka 名单里有这一条）
+DOMAIN,stun.smartgslb.com,DIRECT
+RULE-SET,https://ruleset.skk.moe/List/non_ip/reject.conf,REJECT
+# 主广告域名表约 15 万条；若 Surge 频繁重启或提示内存不足，关掉本模块即可
+DOMAIN-SET,https://ruleset.skk.moe/List/domainset/reject.conf,REJECT

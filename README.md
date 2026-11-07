@@ -13,3 +13,10 @@ https://raw.githubusercontent.com/bryannwu/rules/main/Claude.list
 ```
 
 部分条目参考 [SukkaW/Surge](https://github.com/SukkaW/Surge) 的 ai.conf。
+
+## Surge 模块
+
+| 模块 | 说明 | 安装地址 |
+|---|---|---|
+| [广告域名拦截](Surge/Yubee-AdBlock-Domain.sgmodule) | Sukka 广告域名表，只按域名拦截，不解密；STUN 不拦截 | `https://raw.githubusercontent.com/bryannwu/rules/main/Surge/Yubee-AdBlock-Domain.sgmodule` |
+| [VPS 流量面板](Surge/Komari-Traffic-Panel.sgmodule) | 读取 Komari 只读汇总接口显示 VPS 月流量；token 在模块参数里填，不在仓库里 | `https://raw.githubusercontent.com/bryannwu/rules/main/Surge/Komari-Traffic-Panel.sgmodule` |
