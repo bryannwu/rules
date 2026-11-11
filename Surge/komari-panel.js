@@ -3,7 +3,7 @@
 // 参数：url=<汇总接口>&token=<只读 token>&servers=<探针名:显示名:GB,...>&tz=<计费时区偏移分钟>
 // token 只填在手机本地模块参数里，不写进本文件。
 
-const DEFAULT_SERVERS = 'US-LA-HHost/hhost/400|US-LA-DMIT/DMIT/1000|HK-Yecao/野草云/600|US-LA-Novix/Novix/1000';
+const DEFAULT_SERVERS = 'US-LA-HHost/hhost/400|US-LA-DMIT/DMIT/1000|HK-Yunyoo/云悠/800|US-LA-Novix/Novix/1000';
 const MAX_AGE_MS = 120 * 1000;
 
 function parseArgs(raw) {
